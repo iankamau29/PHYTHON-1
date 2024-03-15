@@ -82,7 +82,7 @@ elif countyr == "Rwanda":
     print("East Africa")
 else:
     print("unknown country")
-    """
+    
 x=1
 while x<=5:
     print("the number is:",x)
@@ -118,9 +118,37 @@ n = 100  # Sum odd numbers up to 10
 result = sum_of_odd_numbers(n)
 print("Sum of odd numbers up to", n, "is:", result)
 
-number=input("number of peole visiting:")
-kenyans=input("number of kenyans")
-rwandise=input("number of rwandise")
+"""
+def main():
+    countries = []
+    while len(countries) < 2:
+        user_input = input("Enter a country: ")
+        countries.append(user_input)
+
+    country_counts = {countries[0]: 0, countries[1]: 0}
+
+    while True:
+        user_country = input("Enter your country: ")
+        if user_country in countries:
+            country_counts[user_country] += 1
+        else:
+            print("Invalid country entered. Please enter one of the two countries.")
+            continue
+
+        choice = input("Do you want to allow another person to input their country? (yes/no): ")
+        if choice.lower() != 'yes':
+            break
+
+    print("Country Counts:")
+    for country, count in country_counts.items():
+        print(f"{country}: {count} people")
+
+
+if __name__ == "__main__":
+    main()
+
+
+
 
 
 
