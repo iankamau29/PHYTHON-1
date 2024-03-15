@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da25486-8cc5-4d2d-a6bc-80673a656361" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/loop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/INTRO.py" beforeDir="false" afterPath="$PROJECT_DIR$/INTRO.py" afterDir="false" />
     </list>
@@ -66,7 +65,7 @@
       <workItem from="1710147804840" duration="10753000" />
       <workItem from="1710319155582" duration="6724000" />
       <workItem from="1710405572121" duration="5480000" />
-      <workItem from="1710490952030" duration="2047000" />
+      <workItem from="1710490952030" duration="3957000" />
     </task>
     <servers />
   </component>
@@ -75,6 +74,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PYTHON_1$loop.coverage" NAME="loop Coverage Results" MODIFIED="1710491783790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PYTHON_1$INTRO.coverage" NAME="INTRO Coverage Results" MODIFIED="1710492981157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PYTHON_1$INTRO.coverage" NAME="INTRO Coverage Results" MODIFIED="1710494162239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

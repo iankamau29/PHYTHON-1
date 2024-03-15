@@ -117,8 +117,8 @@ def sum_of_odd_numbers(n):
 n = 100  # Sum odd numbers up to 10
 result = sum_of_odd_numbers(n)
 print("Sum of odd numbers up to", n, "is:", result)
-
 """
+
 def main():
     countries = []
     while len(countries) < 2:
@@ -144,12 +144,23 @@ def main():
         print(f"{country}: {count} people")
 
 
+
 if __name__ == "__main__":
     main()
 
 
+"""
+#using for to add odd numbers
+
+total = 0
+n = 50
+for i in range(1, n + 1, 2):
+ total += i
+print("The sum of odd numbers up to", n, "is:", total)
 
 
+#end
+"""
 
 
 
