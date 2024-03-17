@@ -117,7 +117,7 @@ def sum_of_odd_numbers(n):
 n = 100  # Sum odd numbers up to 10
 result = sum_of_odd_numbers(n)
 print("Sum of odd numbers up to", n, "is:", result)
-"""
+
 
 def main():
     countries = []
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     main()
 
 
-"""
+
 #using for to add odd numbers
 
 total = 0
@@ -163,9 +163,8 @@ print("The sum of odd numbers up to", n, "is:", total)
 """
 
 
-
-
-
+names = [input("Enter a name: ") for _ in range(3)]; name_counts = {name: 0 for name in names}
+print(names)
 
 
 
