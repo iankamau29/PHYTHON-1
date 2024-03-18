@@ -3,7 +3,7 @@
 this is a sample more than one line comments
 
 
-"""
+
 student_name = "ian"
 student_age = "30"
 is_male = True
@@ -52,7 +52,7 @@ else:
 
 # x=int(input("enter number to be checked:"))
 
-"""
+
 #loops
 #the while loop
 x=1
@@ -61,7 +61,7 @@ while x<=5:
         break
     print(x)
     x+=1
-"""
+
 # the continue statement
 i = 0
 while i < 6:
@@ -70,7 +70,7 @@ while i < 6:
         continue
     print(i)
     i += 1
-""""
+
 countyr=input("enter country:")
 if countyr == "Rwanda":
     print("East Africa")
@@ -160,11 +160,20 @@ print("The sum of odd numbers up to", n, "is:", total)
 
 
 #end
-"""
 
 
-names = [input("Enter a name: ") for _ in range(3)]; name_counts = {name: 0 for name in names}
+
+names = [input("Enter a name: ") for _ in range(3)]
+name_counts = {name: 0 for name in names}
 print(names)
 
+"""
 
+thisdict={
+    "brand": "porshe",
+    "model": "911",
+    "type":"GT3 RS",
+    "year": "2023"
+}
+print(thisdict["model"])
 
