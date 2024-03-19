@@ -119,6 +119,8 @@ result = sum_of_odd_numbers(n)
 print("Sum of odd numbers up to", n, "is:", result)
 
 
+
+
 def main():
     countries = []
     while len(countries) < 2:
@@ -144,10 +146,8 @@ def main():
         print(f"{country}: {count} people")
 
 
-
 if __name__ == "__main__":
     main()
-
 
 
 #using for to add odd numbers
@@ -168,12 +168,61 @@ name_counts = {name: 0 for name in names}
 print(names)
 
 """
+print("         dictionaries            ")
+thisdict = {"Brand": "porshe",
+            "Model": "911",
+            "Type": "GT3 RS",
+            "Year": "2023",
+            "Colour": "red",
+            "1": "one"
+            }
+thisdict.get("Model")
 
-thisdict={
-    "brand": "porshe",
-    "model": "911",
-    "type":"GT3 RS",
-    "year": "2023"
-}
-print(thisdict["model"])
+print(thisdict)
+
+thisdict.pop(input("what do you want to remove:") and input("what do you want to remove:"))
+
+for x in thisdict:
+    print(thisdict[x])
+if "one" in thisdict.values():
+    print("yes, 'model' exixts in this dictionary")
+else:
+    print("no, 'model does not exist in this dictionary")
+
+names = ["Rash", "Kil", "Varsha"]
+numbers = [1, 4, 5]
+
+print(" names : " + str(names))
+print(" numbers : " + str(numbers))
+
+res = dict(zip(names, numbers))
+
+print("dictionary is : " + str(res))
+
+print("            tuples          ")
+thistople = ("apple", "banana", "orange", "Mango")
+print(thistople)
+y = list(thistople)
+y[1] = input("new item: ")
+x = tuple(y)
+
+print(x)
+
+print("        set               ")
+set = {"apple", "banana", "cherry"}
+print(set)
+set.add(input("new item:"))
+print(set)
+set.remove(input("what do you want to remove:"))
+print(set)
+
+list = [1,2,3,4,5,6,7,8,9,10,10]
+repeatednumber=[]
+for item in list:
+    if list.count(item)>1:
+        repeatednumber.append(item)
+        print(repeatednumber)
+print(max(list))
+
+
 
