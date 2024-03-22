@@ -27,9 +27,9 @@ y = int(2.8)
 price = 10
 qty = 7
 total = price * qty
-myanswer = " Total :" + str(total) + "kenyan shillings"
-myanswer1 = "the total is:", total, "kenyan shillings"
-print(myanswer)
+answer = " Total :" + str(total) + "kenyan shillings"
+answer1 = "the total is:", total, "kenyan shillings"
+print(answer)
 
 a = 1
 b = "2"
@@ -45,7 +45,7 @@ print(result)
 age = 29
 residence = "nairobi"
 
-if residence == "nairobi" or residence == "kasarani":
+if residence == "nairobi" or residence == "Kasarani":
     print("can vie for Governor of Nairobi")
 else:
     print("Do not meet requirements to become Governor of Nairobi")
@@ -71,14 +71,14 @@ while i < 6:
     print(i)
     i += 1
 
-countyr=input("enter country:")
-if countyr == "Rwanda":
+country=input("enter country:")
+if country == "Rwanda":
     print("East Africa")
-elif countyr=="Kenya":
+elif country=="Kenya":
     print("East Africa")
-elif countyr == "Tanzania":
+elif country == "Tanzania":
     print("East Africa")
-elif countyr == "Rwanda":
+elif country == "Rwanda":
     print("East Africa")
 else:
     print("unknown country")
@@ -110,7 +110,7 @@ print("total")
 def sum_of_odd_numbers(n):
     total = 0
     for i in range(1, n+1, 2):  # Start from 1 and step by 2 to cover only odd numbers
-        total += i
+        total += I
     return total
 
 # Example usage:
@@ -155,7 +155,7 @@ if __name__ == "__main__":
 total = 0
 n = 50
 for i in range(1, n + 1, 2):
- total += i
+ total += I
 print("The sum of odd numbers up to", n, "is:", total)
 
 
@@ -167,29 +167,29 @@ names = [input("Enter a name: ") for _ in range(3)]
 name_counts = {name: 0 for name in names}
 print(names)
 
-"""
+
 print("         dictionaries            ")
-thisdict = {"Brand": "porshe",
+this dict = {"Brand": "porshe",
             "Model": "911",
             "Type": "GT3 RS",
             "Year": "2023",
             "Colour": "red",
             "1": "one"
             }
-thisdict.get("Model")
+this dict.get("Model")
 
-print(thisdict)
+print(this dict)
 
-thisdict.pop(input("what do you want to remove:") and input("what do you want to remove:"))
+this dict.pop(input("what do you want to remove:") and input("what do you want to remove:"))
 
-for x in thisdict:
-    print(thisdict[x])
-if "one" in thisdict.values():
-    print("yes, 'model' exixts in this dictionary")
+for x in this dict:
+    print(this dict[x])
+if "one" in this dict.values():
+    print("yes, 'model' exits in this dictionary")
 else:
     print("no, 'model does not exist in this dictionary")
 
-names = ["Rash", "Kil", "Varsha"]
+names = ["Rash", "Kil", "Harsh"]
 numbers = [1, 4, 5]
 
 print(" names : " + str(names))
@@ -200,9 +200,9 @@ res = dict(zip(names, numbers))
 print("dictionary is : " + str(res))
 
 print("            tuples          ")
-thistople = ("apple", "banana", "orange", "Mango")
-print(thistople)
-y = list(thistople)
+thistle = ("apple", "banana", "orange", "Mango")
+print(thistle)
+y = list(thistle)
 y[1] = input("new item: ")
 x = tuple(y)
 
@@ -217,12 +217,51 @@ set.remove(input("what do you want to remove:"))
 print(set)
 
 list = [1,2,3,4,5,6,7,8,9,10,10]
-repeatednumber=[]
+repeated number=[]
 for item in list:
     if list.count(item)>1:
-        repeatednumber.append(item)
-        print(repeatednumber)
+        repeated number.append(item)
+        print(repeated number)
 print(max(list))
 
 
+try:
+    number1 =10
+    number2 =20
 
+    x=number2/number1
+
+
+except Exception as e:
+    print("error occurred ",e)
+else:
+    print(x)
+    print("program ended")
+print("retrying ")
+
+
+
+# object-oriented programing
+class student:
+    # properties
+    student_name = ""
+    student_age = ""
+    student_marks = ""
+
+    def __init__(self, name, age):
+        self.student_name = name
+        self.student_age = age
+
+        print("constructor called")  # first function in this case is constructor it is the first function to be called
+
+    def display_student_details(self):  # third function displays the student name
+
+        print("student:", self.student_name, "age:", self.student_age)
+
+
+student1 = student(input("Enter your name:"), input("Enter your age:")) #
+student1.display_student_details()
+
+"""
+#  start of inheritance
+p
