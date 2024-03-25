@@ -262,7 +262,7 @@ class student:
 student1 = student(input("Enter your name:"), input("Enter your age:")) #
 student1.display_student_details()
 
-"""
+
 
 
 #  start of inheritance
@@ -272,19 +272,103 @@ class person:
 
     def __init__(self, name, age):
         self.name = name
-        self.age = age
+        self. Age = age
 
-    def printperson(self):
-        print("vehicle details:", self.name, self.age)
+    def print person(self):
+        print("person details:", self.name, self. Age)
 
 
 class student(person):  # child from parent class
     uniform=""
     def __init__(self, name, age, uniform):
         super().__init__(name, age)
-        self.uniform = uniform
-    def printperson(self):
-        print(self.name, self.age, self.uniform)
+        self. Uniform = uniform
+
+    def print person(self):
+        print(self.name, self. Age, self. Uniform)
 
 student1= student("kelvin",40,"khaki")
-student1.printperson()
+student1.print person()
+
+
+
+# start of poly
+class animal:
+    def __init__(self):
+        pass
+
+    def speak(self):
+        print("I am an animal")
+
+
+class dog(animal):
+    def __init__(self):
+        super().__init__()
+
+    def speak(self):
+        print("I am a dog")
+
+
+class cat(animal):
+    def __init__(self):
+        super().__init__()
+
+    def speak(self):
+        print("I am a cat")
+
+
+dog1 = dog()
+dog1.speak()
+
+cat1 = cat()
+cat1.speak()
+
+"""
+
+
+# encapsulation
+class bank_account:
+    account_Name = ""
+    Balance = 3000
+
+    def __init__(self):
+        pass
+
+    def withdraw(self, amount):
+        self.Balance = self.Balance - amount
+        return self.Balance
+
+    def transfer(self, amount):
+        self.Balance = self.Balance - amount
+        return self.Balance
+
+    def deposit(self, amount, account_name):
+        self.Balance += amount
+        self.account_Name = account_name
+        return self.Balance
+
+    def show_balance(self):
+        print("Account Name", self.account_Name, "Account Balance", self.Balance)
+
+
+account1 = bank_account()
+account1.account_Name = input("enter account name:")
+choice = input("Do you want to withdraw? (yes/no): ")
+account1.withdraw(int(input("enter amount you want to withdraw:")))
+
+account1.show_balance()
+if choice.lower() != 'yes':
+
+    choice = input("Do you want transfer? (yes/no): ")
+    account1.transfer(int(input("enter amount transfer")))
+    account1.show_balance()
+if choice.lower() != 'yes':
+
+    choice = input("Do you want to see your balance? (yes/no): ")
+    account1.show_balance()
+    if choice.lower() != 'yes':
+        print("thank you for using our services welcome again")
+
+print("thank you for using our services welcome again")
+
+
