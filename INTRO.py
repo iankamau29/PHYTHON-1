@@ -263,5 +263,28 @@ student1 = student(input("Enter your name:"), input("Enter your age:")) #
 student1.display_student_details()
 
 """
+
+
 #  start of inheritance
-p
+class person:
+    name= ""
+    age= ""
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def printperson(self):
+        print("vehicle details:", self.name, self.age)
+
+
+class student(person):  # child from parent class
+    uniform=""
+    def __init__(self, name, age, uniform):
+        super().__init__(name, age)
+        self.uniform = uniform
+    def printperson(self):
+        print(self.name, self.age, self.uniform)
+
+student1= student("kelvin",40,"khaki")
+student1.printperson()
